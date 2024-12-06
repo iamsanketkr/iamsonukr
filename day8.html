@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="User name">
+    <h1>This is your form</h1>
+
+    <label for="">username</label>
+    <input type="text" value="">
+    <label
+
+    </form>
+    
+    <script>
+        const   handlesubmit =()=>{
+            const username=document.getElementById('username').value 
+            const password=document.getElementById('password').value
+            const cnfpassword =document.getElementById('çnfpassword').value
+
+            if(username == "" || cnfpassword == ""){
+                window.alert("Please enter the required fields")
+                return
+
+            }
+            if(password.length<8){
+                window.alert("please enter a strong password")
+                return
+            }
+            if(password!==cnfpassword){
+                window.alert("password do not match")
+                return
+            }
+            else{
+                window.alert("Registration successful")
+                return
+            }
+        }
+    </script>
+    
+</body>
+</html>
